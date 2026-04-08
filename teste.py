@@ -20,3 +20,42 @@ for missao in [m1, m2, m3]:
     missao.iniciar_missao()
     missao.concluir_missao()
     missao.exibir_dados()
+
+
+print("iniciando os teste aqui...")
+
+p1 = Personagem("jao do pvp")
+print("personagem criado...")
+p1.exibir_dados()
+
+print("-" * 20)
+
+# criando as missao tudo pra testar a heranca
+m_luta = MissaoCombate("mata rato", "tem q mata os rato do bueiro", 50, "rato", 3)
+m_pegar = MissaoColeta("pega galho", "cata uns graveto na floresta", 20, "graveto", 5)
+m_longe = MissaoExploracao("caverna", "ir ate o final do mapa", 100, "caverna do dragao", 5.5)
+
+
+# nao pode termina a missao sem antes comeca 
+print("tentando termina a missao sem iniciar (deve dar erro):")
+m_luta.concluir_missao() 
+
+print("-" * 20)
+
+print("agora sim vamo joga")
+m_luta.iniciar_missao()
+print("matando os bicho no bueiro...")
+m_luta.concluir_missao()
+
+print("\n--- status final da missao de combate ---")
+m_luta.exibir_dados()
+
+print("\n--- testando a de coleta agora ---")
+m_pegar.iniciar_missao()
+m_pegar.exibir_dados()
+
+print("\n--- testando a de exploracao ---")
+m_longe.iniciar_missao()
+m_longe.exibir_dados()
+
+print("\nfim dos teste vamo ve se a prof vanessa aprova")
