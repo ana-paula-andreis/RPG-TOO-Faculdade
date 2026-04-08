@@ -22,7 +22,6 @@ for missao in [m1, m2, m3]:
     missao.exibir_dados()
 
 
-print("iniciando os teste aqui...")
 
 p1 = Personagem("jao do pvp")
 print("personagem criado...")
@@ -42,20 +41,17 @@ m_luta.concluir_missao()
 
 print("-" * 20)
 
-print("agora sim vamo joga")
 m_luta.iniciar_missao()
 print("matando os bicho no bueiro...")
 m_luta.concluir_missao()
 
-print("\n--- status final da missao de combate ---")
+print("\n-- status final da missao de combate ---")
 m_luta.exibir_dados()
 
-print("\n--- testando a de coleta agora ---")
+print("\n--- testando a de coleta agora --")
 m_pegar.iniciar_missao()
 m_pegar.exibir_dados()
 
-print("\n--- testando a de exploracao ---")
+print("\n--- testando a de exploracao --")
 m_longe.iniciar_missao()
 m_longe.exibir_dados()
-
-print("\nfim dos teste vamo ve se a prof vanessa aprova")
