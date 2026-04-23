@@ -5,6 +5,32 @@ class Personagem:
         self.__xp = 0
         self.__missoes = []
 
+    @property
+    def nome(self):
+        return self.__nome
+
+    @property
+    def nivel(self):
+        return self.__nivel
+
+    @property
+    def xp(self):
+        return self.__xp
+
+    @property
+    def missoes(self):
+        return self.__missoes
+
+    @nivel.setter
+    def nivel(self, valor):
+        if valor > 0:
+            self.__nivel = valor
+
+    @xp.setter
+    def xp(self, valor):
+        if valor >= 0:
+            self.__xp = valor
+
     def add_missao(self, missao):
         if missao not in self.__missoes:
             self.__missoes.append(missao)
