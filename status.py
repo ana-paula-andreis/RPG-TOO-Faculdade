@@ -1,7 +1,6 @@
 from enum import Enum
-
 class Status(Enum):
-    PENDENTE = "pndente"
-    EM_ANDAMENTO = "em andamento"
-    CONCLUIDA = "concluida"
-    FRACASSADA = "fracassada"
+    PENDENTE = "PENDENTE"
+    EM_ANDAMENTO = "EM ANDAMENTO"
+    CONCLUIDA = "CONCLUIDA"
+    FRACASSADA = "FRACASSADA"
