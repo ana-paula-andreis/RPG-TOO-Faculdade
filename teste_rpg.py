@@ -1,5 +1,5 @@
-from Status import Status
-from Missao import Missao, MissaoColeta, MissaoCombate, MissaoExploracao
+from status import Status
+from missoes import Missao, MissaoColeta, MissaoCombate, MissaoExploracao
 
 missao_combate = MissaoCombate("Conquistar o povo de Teste", "Combater os inimigos do local Teste", 25, "Goblins", 5)
 missao_coleta = MissaoColeta("Coletar 10 caixas de suprimentos", "Coletar suprimentos", 20, "Caixa de Suprimento", 10)

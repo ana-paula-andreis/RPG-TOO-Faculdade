@@ -1,4 +1,4 @@
-from Status import Status
+from status import Status
 from abc import ABC, abstractmethod
 
 class Missao(ABC):
